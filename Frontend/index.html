@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="card_container">
+      <h1>Zaloguj się</h1>
+      <p>Podaj swoje dane</p>
+
+      <form class="login_form" autocomplete="off">
+        <div class="form_item">
+          <input type="text" id="name_input" class="name_input" required />
+          <label for="name_input">Imie</label>
+        </div>
+        <div class="form_item">
+          <input
+            type="text"
+            id="lastName_input"
+            class="lastName_input"
+            required
+          />
+          <label for="lastName_input">Nazwisko</label>
+        </div>
+        <div class="form_item">
+          <input type="number" id="pesel_input" class="pesel_input" required />
+          <label for="pesel_input">Pesel</label>
+        </div>
+
+        <div class="form_item">
+          <input
+            type="text"
+            id="dateBirth_input"
+            class="dateBirth_input"
+            required
+          />
+          <label for="dateBirth_input">Data urodzenia</label>
+        </div>
+        <button class="confirm_btn" type="submit">Wyślij</button>
+      </form>
+    </div>
+
+    <div class="blur">
+      <div class="modal">
+        <button class="closeBtn"><i class="fa fa-close"></i></button>
+        <h2>sukces</h2>
+        <p>Udało sie zapisać dane</p>
+        <p></p>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/ce58a3376a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
